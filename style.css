@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+body {
+    padding: 72px 0;
+    background-color: #c8d5b9;
+    color: #1f392d;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.container {
+    width: 500px;
+    margin: auto;
+    background-color: #8fc0a9;
+    border-radius: 8px;
+    padding: 24px 48px;
+}
+.myInputs {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputLabels {
+    width: 55%;
+}
+.myInputs input {
+    width: 45%;
+    padding: 4px 8px;
+    border: 1px solid #1f392d;
+    border-radius: 8px;
+    background-color: #faf3dd;
+}
+#myBtn {
+    display: block;
+    font-size: 1em;
+    margin: 48px auto 0;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #1f392d;
+    background-color: #faf3dd;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+#myBtn:hover {
+    background-color: #c8d5b9;
+}
+#myRandomNum {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 16px;
+}
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+        margin-bottom: 28px;
+    }
+    .container {
+        width: 330px;
+        padding: 16px 32px;
+    }
+    .myInputs {
+        flex-wrap: wrap;
+    }
+    .inputLabels, .myInputs input {
+        width: 100%;
+    }
+    .inputLabels {
+        margin-bottom: 8px;
+    }
+    #myBtn {
+        font-size: 12px;
+        padding: 12px 16px;
+    }
+}
